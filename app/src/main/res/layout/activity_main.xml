@@ -8,34 +8,46 @@
     tools:context=".MainActivity">
 
     <ImageView
+
         android:id="@+id/dice_image"
         android:layout_width="112dp"
         android:layout_height="80dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="168dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/empty_dice"
-        tools:src="@drawable/dice_1"/>
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/dice_image2"
+        android:layout_width="120dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice_image"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_2" />
 
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="244dp"
         android:text="@string/roll_label"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dice_image" />
 
-    <Button
-        android:id="@+id/count_up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/count_up_label"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/roll_button" />
+    <!-- <Button
+         android:id="@+id/count_up"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="160dp"
+         android:layout_marginTop="20dp"
+         android:text="@string/count_up_label"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/roll_button" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
