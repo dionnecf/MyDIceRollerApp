@@ -28,6 +28,13 @@ class MainActivity : AppCompatActivity() {
 
         //val countUp: Button = findViewById(R.id.count_up)
         //countUp.setOnClickListener { countUp() }
+
+        val clearButton: Button = findViewById(R.id.clear_button)
+        clearButton.setOnClickListener {
+
+            diceImage.setImageResource(R.drawable.empty_dice)
+            diceImage2.setImageResource(R.drawable.empty_dice)
+        }
     }
 
     private fun rollDice(){
